@@ -1,10 +1,14 @@
-package modelo;
+package parte_b;
 
+import java.io.Serializable;
 import java.util.List;
+import javax.persistence.*;
 
-public class Computadora {
+@Entity
+public class Computadora extends EntityApp implements Serializable {
+
+    private static final long serialVersionUID = 1L;
     
-    private long id;
     private String codigo;
     private String marca;
     private String modelo;
@@ -44,20 +48,13 @@ public class Computadora {
         this.modelo = modelo;
     }
 
+    @OneToMany(mappedBy = "computadora", cascade = CascadeType.ALL)
     public List<Componente> getComponentes() {
         return componentes;
     }
 
     public void setComponentes(List<Componente> componentes) {
         this.componentes = componentes;
-    }
-
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
     }
     
 }

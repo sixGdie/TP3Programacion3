@@ -1,13 +1,13 @@
-package controlador;
+package parte_a;
 
-import database.Conexion;
+import parte_a.Conexion;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import modelo.Componente;
-import modelo.Computadora;
+import parte_a.Componente;
+import parte_a.Computadora;
 
 public class Gestor {
 

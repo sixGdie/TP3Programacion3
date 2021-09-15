@@ -1,4 +1,4 @@
-package modelo;
+package parte_a;
 
 public class Componente {
 

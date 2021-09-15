@@ -1,4 +1,4 @@
-package database;
+package parte_a;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -8,7 +8,7 @@ public class Conexion {
 
     private Connection conexion = null;
     private String usuario = "root";
-    private String password = "";
+    private String password = "admin";
     private String puerto = "3306";
     private String db = "tp3prog3sql";
     private String servidor = "localhost";

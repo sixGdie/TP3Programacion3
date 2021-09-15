@@ -1,14 +1,14 @@
-package tp3programacion3;
+package parte_a;
 
-import controlador.Gestor;
+import parte_a.Gestor;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-import modelo.Componente;
-import modelo.Computadora;
+import parte_a.Componente;
+import parte_a.Computadora;
 
-public class TP3Programacion3 {
+public class TP3Programacion3a {
 
     public static void main(String[] args) throws SQLException {
         
